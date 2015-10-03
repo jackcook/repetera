@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		DF53E4F2F5550FBF0DA4D8CE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE02AD63B4B421BE531531 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		EB131CB11BC0578F00309963 /* Plaid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB131CB01BC0578F00309963 /* Plaid.swift */; settings = {ASSET_TAGS = (); }; };
-		EB564F001BC0580800BA6B8C /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564EFE1BC0580800BA6B8C /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
-		EB564F011BC0580800BA6B8C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564EFF1BC0580800BA6B8C /* Keys.swift */; settings = {ASSET_TAGS = (); }; };
-		EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564F021BC066B400BA6B8C /* Subscription.swift */; settings = {ASSET_TAGS = (); }; };
-		EB564F051BC06BFF00BA6B8C /* Subscriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */; settings = {ASSET_TAGS = (); }; };
+		EB131CB11BC0578F00309963 /* Plaid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB131CB01BC0578F00309963 /* Plaid.swift */; };
+		EB564F001BC0580800BA6B8C /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564EFE1BC0580800BA6B8C /* Keys.plist */; };
+		EB564F011BC0580800BA6B8C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564EFF1BC0580800BA6B8C /* Keys.swift */; };
+		EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564F021BC066B400BA6B8C /* Subscription.swift */; };
+		EB564F051BC06BFF00BA6B8C /* Subscriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */; };
 		EBD7D2811BC0555100831E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2801BC0555100831E94 /* AppDelegate.swift */; };
 		EBD7D2861BC0555100831E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2841BC0555100831E94 /* Main.storyboard */; };
 		EBD7D2881BC0555100831E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2871BC0555100831E94 /* Assets.xcassets */; };
 		EBD7D28B1BC0555100831E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2891BC0555100831E94 /* LaunchScreen.storyboard */; };
 		EBD7D2961BC0555100831E94 /* RepeteraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2951BC0555100831E94 /* RepeteraTests.swift */; };
 		EBD7D2A11BC0555100831E94 /* RepeteraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2A01BC0555100831E94 /* RepeteraUITests.swift */; };
-		EBD7D2B01BC0568400831E94 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2AF1BC0568400831E94 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EBD7D2B01BC0568400831E94 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2AF1BC0568400831E94 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,7 +242,6 @@
 				TargetAttributes = {
 					EBD7D27C1BC0555100831E94 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = JDJKS788L2;
 					};
 					EBD7D2901BC0555100831E94 = {
 						CreatedOnToolsVersion = 7.0.1;

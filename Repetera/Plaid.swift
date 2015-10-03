@@ -89,8 +89,12 @@ public class Plaid {
         var parts: [String] = []
         for (name, value) in queryParameters {
             let part = NSString(format: "%@=%@",
-                name.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!,
-                value.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
+                name.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!,
+                value.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!)
+            
+//            let part = NSString(format: "%@=%@",
+//                name.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!,
+//                value.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
             parts.append(part as String)
         }
         return parts.joinWithSeparator("&")

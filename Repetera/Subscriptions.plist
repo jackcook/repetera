@@ -2,6 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GH GITHUB.COM</key>
+	<dict>
+		<key>status</key>
+		<string>Small</string>
+		<key>name</key>
+		<string>GitHub</string>
+		<key>price</key>
+		<string>5</string>
+		<key>color</key>
+		<string>21,16,19</string>
+	</dict>
+	<key>ADOBE *PHOTOGPHY PLAN</key>
+	<dict>
+		<key>status</key>
+		<string>Photography</string>
+		<key>name</key>
+		<string>Adobe Creative Cloud</string>
+		<key>price</key>
+		<string>10.88</string>
+		<key>color</key>
+		<string>210,10,10</string>
+	</dict>
 	<key>DROPBOX db.tt/cchelp</key>
 	<dict>
 		<key>status</key>

@@ -12,11 +12,13 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet var tableView: UITableView!
     
+    var names: Array<String>!
     var subscriptions: Array<Subscription>!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.names = Array<String>()
         self.subscriptions = Array<Subscription>()
         
         self.tableView.dataSource = self
@@ -37,9 +39,11 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                     }
                     
                     for transaction in transactions {
-                        print(transaction.name)
                         if let subscription = Subscription.getSubscriptions()[transaction.name] {
-                            self.subscriptions.append(subscription)
+                            if !self.names.contains(transaction.name) {
+                                self.names.append(transaction.name)
+                                self.subscriptions.append(subscription)
+                            }
                         }
                     }
                     
@@ -82,7 +86,7 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
         status.text = subscription.status!.uppercaseString
         
         let price = cell.viewWithTag(14)! as! UILabel
-        price.text = String(subscription.price!)
+        price.text = "$" + String(format: "%.2f", subscription.price!)
         
         return cell
     }
