@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DROPBOX db.tt/cchelp</key>
+	<dict>
+		<key>status</key>
+		<string>Pro</string>
+		<key>name</key>
+		<string>Dropbox</string>
+		<key>price</key>
+		<string>9.99</string>
+		<key>color</key>
+		<string>0,126,229</string>
+	</dict>
+	<key>Spotify</key>
+	<dict>
+		<key>status</key>
+		<string>Premium</string>
+		<key>name</key>
+		<string>Spotify</string>
+		<key>price</key>
+		<string>9.99</string>
+		<key>color</key>
+		<string>30,215,96</string>
+	</dict>
+</dict>
+</plist>
