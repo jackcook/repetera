@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD7D2811BC0555100831E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2801BC0555100831E94 /* AppDelegate.swift */; };
+		EBD7D2831BC0555100831E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2821BC0555100831E94 /* ViewController.swift */; };
+		EBD7D2861BC0555100831E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2841BC0555100831E94 /* Main.storyboard */; };
+		EBD7D2881BC0555100831E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2871BC0555100831E94 /* Assets.xcassets */; };
+		EBD7D28B1BC0555100831E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2891BC0555100831E94 /* LaunchScreen.storyboard */; };
+		EBD7D2961BC0555100831E94 /* RepeteraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2951BC0555100831E94 /* RepeteraTests.swift */; };
+		EBD7D2A11BC0555100831E94 /* RepeteraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2A01BC0555100831E94 /* RepeteraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBD7D2921BC0555100831E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD7D2751BC0555100831E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD7D27C1BC0555100831E94;
+			remoteInfo = Repetera;
+		};
+		EBD7D29D1BC0555100831E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD7D2751BC0555100831E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD7D27C1BC0555100831E94;
+			remoteInfo = Repetera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBD7D27D1BC0555100831E94 /* Repetera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD7D2801BC0555100831E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBD7D2821BC0555100831E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBD7D2851BC0555100831E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBD7D2871BC0555100831E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBD7D28A1BC0555100831E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBD7D28C1BC0555100831E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD7D2911BC0555100831E94 /* RepeteraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepeteraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD7D2951BC0555100831E94 /* RepeteraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeteraTests.swift; sourceTree = "<group>"; };
+		EBD7D2971BC0555100831E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD7D29C1BC0555100831E94 /* RepeteraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepeteraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD7D2A01BC0555100831E94 /* RepeteraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeteraUITests.swift; sourceTree = "<group>"; };
+		EBD7D2A21BC0555100831E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD7D27A1BC0555100831E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D28E1BC0555100831E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D2991BC0555100831E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD7D2741BC0555100831E94 = {
+			isa = PBXGroup;
+			children = (
+				EBD7D27F1BC0555100831E94 /* Repetera */,
+				EBD7D2941BC0555100831E94 /* RepeteraTests */,
+				EBD7D29F1BC0555100831E94 /* RepeteraUITests */,
+				EBD7D27E1BC0555100831E94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD7D27E1BC0555100831E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7D27D1BC0555100831E94 /* Repetera.app */,
+				EBD7D2911BC0555100831E94 /* RepeteraTests.xctest */,
+				EBD7D29C1BC0555100831E94 /* RepeteraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD7D27F1BC0555100831E94 /* Repetera */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7D2801BC0555100831E94 /* AppDelegate.swift */,
+				EBD7D2821BC0555100831E94 /* ViewController.swift */,
+				EBD7D2841BC0555100831E94 /* Main.storyboard */,
+				EBD7D2871BC0555100831E94 /* Assets.xcassets */,
+				EBD7D2891BC0555100831E94 /* LaunchScreen.storyboard */,
+				EBD7D28C1BC0555100831E94 /* Info.plist */,
+			);
+			path = Repetera;
+			sourceTree = "<group>";
+		};
+		EBD7D2941BC0555100831E94 /* RepeteraTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7D2951BC0555100831E94 /* RepeteraTests.swift */,
+				EBD7D2971BC0555100831E94 /* Info.plist */,
+			);
+			path = RepeteraTests;
+			sourceTree = "<group>";
+		};
+		EBD7D29F1BC0555100831E94 /* RepeteraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7D2A01BC0555100831E94 /* RepeteraUITests.swift */,
+				EBD7D2A21BC0555100831E94 /* Info.plist */,
+			);
+			path = RepeteraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD7D27C1BC0555100831E94 /* Repetera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD7D2A51BC0555100831E94 /* Build configuration list for PBXNativeTarget "Repetera" */;
+			buildPhases = (
+				EBD7D2791BC0555100831E94 /* Sources */,
+				EBD7D27A1BC0555100831E94 /* Frameworks */,
+				EBD7D27B1BC0555100831E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repetera;
+			productName = Repetera;
+			productReference = EBD7D27D1BC0555100831E94 /* Repetera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBD7D2901BC0555100831E94 /* RepeteraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD7D2A81BC0555100831E94 /* Build configuration list for PBXNativeTarget "RepeteraTests" */;
+			buildPhases = (
+				EBD7D28D1BC0555100831E94 /* Sources */,
+				EBD7D28E1BC0555100831E94 /* Frameworks */,
+				EBD7D28F1BC0555100831E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD7D2931BC0555100831E94 /* PBXTargetDependency */,
+			);
+			name = RepeteraTests;
+			productName = RepeteraTests;
+			productReference = EBD7D2911BC0555100831E94 /* RepeteraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBD7D29B1BC0555100831E94 /* RepeteraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD7D2AB1BC0555100831E94 /* Build configuration list for PBXNativeTarget "RepeteraUITests" */;
+			buildPhases = (
+				EBD7D2981BC0555100831E94 /* Sources */,
+				EBD7D2991BC0555100831E94 /* Frameworks */,
+				EBD7D29A1BC0555100831E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD7D29E1BC0555100831E94 /* PBXTargetDependency */,
+			);
+			name = RepeteraUITests;
+			productName = RepeteraUITests;
+			productReference = EBD7D29C1BC0555100831E94 /* RepeteraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD7D2751BC0555100831E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jack Cook";
+				TargetAttributes = {
+					EBD7D27C1BC0555100831E94 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EBD7D2901BC0555100831E94 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EBD7D27C1BC0555100831E94;
+					};
+					EBD7D29B1BC0555100831E94 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EBD7D27C1BC0555100831E94;
+					};
+				};
+			};
+			buildConfigurationList = EBD7D2781BC0555100831E94 /* Build configuration list for PBXProject "Repetera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBD7D2741BC0555100831E94;
+			productRefGroup = EBD7D27E1BC0555100831E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD7D27C1BC0555100831E94 /* Repetera */,
+				EBD7D2901BC0555100831E94 /* RepeteraTests */,
+				EBD7D29B1BC0555100831E94 /* RepeteraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD7D27B1BC0555100831E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD7D28B1BC0555100831E94 /* LaunchScreen.storyboard in Resources */,
+				EBD7D2881BC0555100831E94 /* Assets.xcassets in Resources */,
+				EBD7D2861BC0555100831E94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D28F1BC0555100831E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D29A1BC0555100831E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD7D2791BC0555100831E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD7D2831BC0555100831E94 /* ViewController.swift in Sources */,
+				EBD7D2811BC0555100831E94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D28D1BC0555100831E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD7D2961BC0555100831E94 /* RepeteraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7D2981BC0555100831E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD7D2A11BC0555100831E94 /* RepeteraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBD7D2931BC0555100831E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD7D27C1BC0555100831E94 /* Repetera */;
+			targetProxy = EBD7D2921BC0555100831E94 /* PBXContainerItemProxy */;
+		};
+		EBD7D29E1BC0555100831E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD7D27C1BC0555100831E94 /* Repetera */;
+			targetProxy = EBD7D29D1BC0555100831E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBD7D2841BC0555100831E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD7D2851BC0555100831E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBD7D2891BC0555100831E94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD7D28A1BC0555100831E94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD7D2A31BC0555100831E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBD7D2A41BC0555100831E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD7D2A61BC0555100831E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Repetera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.Repetera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBD7D2A71BC0555100831E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Repetera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.Repetera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBD7D2A91BC0555100831E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepeteraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.RepeteraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repetera.app/Repetera";
+			};
+			name = Debug;
+		};
+		EBD7D2AA1BC0555100831E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepeteraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.RepeteraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repetera.app/Repetera";
+			};
+			name = Release;
+		};
+		EBD7D2AC1BC0555100831E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RepeteraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.RepeteraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Repetera;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EBD7D2AD1BC0555100831E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RepeteraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.jackcook.RepeteraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Repetera;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD7D2781BC0555100831E94 /* Build configuration list for PBXProject "Repetera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD7D2A31BC0555100831E94 /* Debug */,
+				EBD7D2A41BC0555100831E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD7D2A51BC0555100831E94 /* Build configuration list for PBXNativeTarget "Repetera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD7D2A61BC0555100831E94 /* Debug */,
+				EBD7D2A71BC0555100831E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBD7D2A81BC0555100831E94 /* Build configuration list for PBXNativeTarget "RepeteraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD7D2A91BC0555100831E94 /* Debug */,
+				EBD7D2AA1BC0555100831E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBD7D2AB1BC0555100831E94 /* Build configuration list for PBXNativeTarget "RepeteraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD7D2AC1BC0555100831E94 /* Debug */,
+				EBD7D2AD1BC0555100831E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD7D2751BC0555100831E94 /* Project object */;
+}
