@@ -73,7 +73,6 @@ public class Plaid {
         
         var url = NSURL(string: "https://tartan.plaid.com\(endpoint)")!
         url = self.NSURLByAppendingQueryParameters(url, queryParameters: params)
-        print(url)
         
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = requestType

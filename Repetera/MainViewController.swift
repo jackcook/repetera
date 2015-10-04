@@ -7,6 +7,7 @@
 //
 
 import RealmSwift
+import SVProgressHUD
 import UIKit
 
 public class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -112,11 +113,19 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                 }
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    SVProgressHUD.dismiss()
+                    
                     self.tableView.reloadData()
                     self.paymentLabel.text = "$" + String(NSString(format: "%.2f", total))
                 })
             })
         }
+    }
+    
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        SVProgressHUD.show()
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
