@@ -13,6 +13,7 @@
 		EB564F011BC0580800BA6B8C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564EFF1BC0580800BA6B8C /* Keys.swift */; };
 		EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564F021BC066B400BA6B8C /* Subscription.swift */; };
 		EB564F051BC06BFF00BA6B8C /* Subscriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */; };
+		EBA116421BC1730D0098B15C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA116411BC1730D0098B15C /* Transaction.swift */; };
 		EBC080561BC0A79C0093C813 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080551BC0A79C0093C813 /* AccountsViewController.swift */; };
 		EBC080581BC0A9A90093C813 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080571BC0A9A90093C813 /* Account.swift */; };
 		EBC0805A1BC0AFB40093C813 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080591BC0AFB40093C813 /* LoginViewController.swift */; };
@@ -51,6 +52,7 @@
 		EB564EFF1BC0580800BA6B8C /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		EB564F021BC066B400BA6B8C /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Subscriptions.plist; sourceTree = "<group>"; };
+		EBA116411BC1730D0098B15C /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		EBC080551BC0A79C0093C813 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		EBC080571BC0A9A90093C813 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		EBC080591BC0AFB40093C813 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EBA116431BC1733A0098B15C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB564EFF1BC0580800BA6B8C /* Keys.swift */,
+				EB131CB01BC0578F00309963 /* Plaid.swift */,
+				EB564F021BC066B400BA6B8C /* Subscription.swift */,
+				EBC080571BC0A9A90093C813 /* Account.swift */,
+				EBA116411BC1730D0098B15C /* Transaction.swift */,
+				EB564EFE1BC0580800BA6B8C /* Keys.plist */,
+				EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		EBD7D2741BC0555100831E94 = {
 			isa = PBXGroup;
 			children = (
@@ -137,18 +153,13 @@
 		EBD7D27F1BC0555100831E94 /* Repetera */ = {
 			isa = PBXGroup;
 			children = (
-				EB564EFE1BC0580800BA6B8C /* Keys.plist */,
-				EB564EFF1BC0580800BA6B8C /* Keys.swift */,
-				EB131CB01BC0578F00309963 /* Plaid.swift */,
+				EBA116431BC1733A0098B15C /* Models */,
 				EBD7D2AE1BC055FA00831E94 /* View Controllers */,
 				EBD7D2801BC0555100831E94 /* AppDelegate.swift */,
 				EBD7D2841BC0555100831E94 /* Main.storyboard */,
 				EBD7D2871BC0555100831E94 /* Assets.xcassets */,
 				EBD7D2891BC0555100831E94 /* LaunchScreen.storyboard */,
 				EBD7D28C1BC0555100831E94 /* Info.plist */,
-				EB564F021BC066B400BA6B8C /* Subscription.swift */,
-				EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */,
-				EBC080571BC0A9A90093C813 /* Account.swift */,
 			);
 			path = Repetera;
 			sourceTree = "<group>";
@@ -372,6 +383,7 @@
 				EBC080561BC0A79C0093C813 /* AccountsViewController.swift in Sources */,
 				EBC080581BC0A9A90093C813 /* Account.swift in Sources */,
 				EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */,
+				EBA116421BC1730D0098B15C /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
