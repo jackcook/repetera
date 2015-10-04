@@ -22,6 +22,10 @@ public class LoginViewController: UIViewController {
         self.passwordField.text = ""
     }
     
+    @IBAction func backButton(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     @IBAction func submitButton(sender: UIButton) {
         let username = self.usernameField.text!
         let password = self.passwordField.text!

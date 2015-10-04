@@ -26,6 +26,7 @@ public class AccountsViewController: UIViewController, UITableViewDataSource, UI
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.allowsSelection = false
     }
     
     @IBAction func backButton(sender: UIButton) {

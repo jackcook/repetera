@@ -103,12 +103,13 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5z-9h-4dY">
-                                <rect key="frame" x="16" y="29.5" width="28.5" height="18"/>
+                                <rect key="frame" x="-4" y="17.5" width="67" height="42"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="j5z-9h-4dY" secondAttribute="height" multiplier="8:5" id="7I2-Ml-Ul3"/>
-                                    <constraint firstAttribute="height" constant="18" id="AA3-z9-bsJ"/>
+                                    <constraint firstAttribute="height" constant="42" id="AA3-z9-bsJ"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="12" maxX="20" maxY="12"/>
                                 <state key="normal" image="Credit Card"/>
                                 <connections>
                                     <segue destination="SiP-eH-qdQ" kind="show" id="53V-2c-FEa"/>
@@ -120,7 +121,7 @@
                         <constraints>
                             <constraint firstItem="yaj-Y7-orf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2cg-86-75p"/>
                             <constraint firstItem="AKW-K9-VRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fH-Vj-yvG"/>
-                            <constraint firstItem="j5z-9h-4dY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="7zt-ez-1Tu"/>
+                            <constraint firstItem="j5z-9h-4dY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-4" id="7zt-ez-1Tu"/>
                             <constraint firstAttribute="trailing" secondItem="yaj-Y7-orf" secondAttribute="trailing" id="9Uj-c7-LXD"/>
                             <constraint firstItem="j5z-9h-4dY" firstAttribute="centerY" secondItem="AKW-K9-VRv" secondAttribute="centerY" id="9cA-ei-80y"/>
                             <constraint firstItem="AKW-K9-VRv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Me0-ie-YKP"/>
@@ -198,24 +199,26 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6O-Bq-mkF">
-                                <rect key="frame" x="566" y="29" width="18" height="18"/>
+                                <rect key="frame" x="554" y="17" width="42" height="42"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="8fM-IC-mjM"/>
+                                    <constraint firstAttribute="height" constant="42" id="8fM-IC-mjM"/>
                                     <constraint firstAttribute="width" secondItem="X6O-Bq-mkF" secondAttribute="height" multiplier="1:1" id="pAB-J0-eJ9"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                                 <state key="normal" image="Add"/>
                                 <connections>
                                     <segue destination="bVr-S9-YGF" kind="show" id="HgM-s4-X2U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKt-Om-rkK">
-                                <rect key="frame" x="16" y="29" width="20" height="18"/>
+                                <rect key="frame" x="2" y="17" width="47" height="42"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PKt-Om-rkK" secondAttribute="height" multiplier="128:114" id="1xX-qr-TRu"/>
-                                    <constraint firstAttribute="height" constant="18" id="Vu5-vk-e8m"/>
+                                    <constraint firstAttribute="height" constant="42" id="Vu5-vk-e8m"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="14" minY="12" maxX="14" maxY="12"/>
                                 <state key="normal" title="Button" image="Back"/>
                                 <connections>
                                     <action selector="backButton:" destination="SiP-eH-qdQ" eventType="touchUpInside" id="WWU-Av-beG"/>
@@ -227,8 +230,8 @@
                         <constraints>
                             <constraint firstItem="auf-rz-R70" firstAttribute="top" secondItem="aix-sc-fIu" secondAttribute="bottom" constant="8" id="017-5V-lTc"/>
                             <constraint firstItem="LND-Nh-T8T" firstAttribute="leading" secondItem="fdl-1h-fyn" secondAttribute="leading" id="4ST-ki-UYB"/>
-                            <constraint firstItem="PKt-Om-rkK" firstAttribute="leading" secondItem="fdl-1h-fyn" secondAttribute="leading" constant="16" id="DLM-jg-Jih"/>
-                            <constraint firstAttribute="trailing" secondItem="X6O-Bq-mkF" secondAttribute="trailing" constant="16" id="GLy-jz-gsx"/>
+                            <constraint firstItem="PKt-Om-rkK" firstAttribute="leading" secondItem="fdl-1h-fyn" secondAttribute="leading" constant="2" id="DLM-jg-Jih"/>
+                            <constraint firstAttribute="trailing" secondItem="X6O-Bq-mkF" secondAttribute="trailing" constant="4" id="GLy-jz-gsx"/>
                             <constraint firstAttribute="trailing" secondItem="LND-Nh-T8T" secondAttribute="trailing" id="NFT-Yh-Qmi"/>
                             <constraint firstItem="X6O-Bq-mkF" firstAttribute="centerY" secondItem="auf-rz-R70" secondAttribute="centerY" id="VQ3-CB-qUf"/>
                             <constraint firstItem="LND-Nh-T8T" firstAttribute="top" secondItem="auf-rz-R70" secondAttribute="bottom" constant="12" id="XvD-TT-ah0"/>
@@ -285,13 +288,17 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSr-k5-hUp">
-                                <rect key="frame" x="16" y="30" width="20" height="18"/>
+                                <rect key="frame" x="2" y="18" width="47" height="42"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="kAV-Md-KGe"/>
+                                    <constraint firstAttribute="height" constant="42" id="kAV-Md-KGe"/>
                                     <constraint firstAttribute="width" secondItem="CSr-k5-hUp" secondAttribute="height" multiplier="128:114" id="rz5-y9-KbI"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="14" minY="12" maxX="14" maxY="12"/>
                                 <state key="normal" title="Button" image="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="bVr-S9-YGF" eventType="touchUpInside" id="ymB-1o-p7T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6o-j3-J0s">
                                 <rect key="frame" x="276" y="343" width="49" height="30"/>
@@ -309,7 +316,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CSr-k5-hUp" firstAttribute="leading" secondItem="go2-Xy-6S8" secondAttribute="leading" constant="16" id="7be-cB-egf"/>
+                            <constraint firstItem="CSr-k5-hUp" firstAttribute="leading" secondItem="go2-Xy-6S8" secondAttribute="leading" constant="2" id="7be-cB-egf"/>
                             <constraint firstItem="hhu-ny-8qo" firstAttribute="top" secondItem="Uqc-Wg-LVo" secondAttribute="bottom" constant="16" id="KU6-gF-LS2"/>
                             <constraint firstItem="C6o-j3-J0s" firstAttribute="centerX" secondItem="go2-Xy-6S8" secondAttribute="centerX" id="LWj-ZV-Dxg"/>
                             <constraint firstItem="dHT-1z-Upa" firstAttribute="centerX" secondItem="go2-Xy-6S8" secondAttribute="centerX" id="N5I-nz-HEX"/>

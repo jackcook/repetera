@@ -33,6 +33,7 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.separatorStyle = .None
+        self.tableView.allowsSelection = false
         
         for token in accessTokens {
             Plaid.connect(token, completion: { (accounts, transactions, error) -> Void in
