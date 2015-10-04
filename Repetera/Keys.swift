@@ -10,18 +10,6 @@ import Foundation
 
 public class Keys {
     
-    public class func bankUsername() -> String {
-        return Keys.getKey("Username")
-    }
-    
-    public class func bankPassword() -> String {
-        return Keys.getKey("Password")
-    }
-    
-    public class func bankType() -> String {
-        return Keys.getKey("Institution")
-    }
-    
     public class func plaidClientID() -> String {
         return Keys.getKey("PlaidClientID")
     }
