@@ -12,6 +12,7 @@ import UIKit
 public class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var paymentLabel: UILabel!
     
     var names: Array<String>!
     var subscriptions: Array<Subscription>!
@@ -45,7 +46,16 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                 var transactionsDict = Dictionary<String, Array<Transaction>>()
                 
                 for transaction in transactions {
-                    if transaction.categories.contains("Interest") || transaction.categories.contains("Transfer") {
+                    let blacklist = ["Food and Drink", "Interest", "Transfer"]
+                    var goon = true
+                    
+                    for category in blacklist {
+                        if transaction.categories.contains(category) {
+                            goon = false
+                        }
+                    }
+                    
+                    if !goon {
                         continue
                     }
                     
@@ -80,7 +90,7 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                                 }
                                 
                                 let days = self.daysFrom(from: transaction.date, to: first!)
-                                if days <= 32 && days >= 28 {
+                                if days <= 35 && days >= 28 {
                                     pass = true
                                     break
                                 }
@@ -96,8 +106,14 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                     }
                 }
                 
+                var total: Float = 0.0
+                for subscription in self.subscriptions {
+                    total += subscription.price
+                }
+                
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.tableView.reloadData()
+                    self.paymentLabel.text = "$" + String(NSString(format: "%.2f", total))
                 })
             })
         }
@@ -113,7 +129,18 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
         background.backgroundColor = subscription.getColor()
         
         let icon = cell.viewWithTag(11)! as! UIImageView
-        icon.image = UIImage(named: subscription.getStatus() == "Unknown" ? "Unknown" : subscription.getName())
+        var imageName: String?
+        
+        switch subscription.getStatus() {
+        case "Recurring Payment":
+            imageName = "Unknown"
+        case "Unknown":
+            imageName = "Unknown"
+        default:
+            imageName = subscription.getName()
+        }
+        
+        icon.image = UIImage(named: imageName!)
         
         let name = cell.viewWithTag(12)! as! UILabel
         name.text = subscription.getName()

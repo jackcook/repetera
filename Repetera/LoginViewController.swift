@@ -32,8 +32,8 @@ public class LoginViewController: UIViewController {
         
         SVProgressHUD.show()
         
-        Plaid.authenticate(username, password: password, type: "chase") { (access_token, accounts, error) -> Void in
-            guard let access_token = access_token, accounts = accounts else {
+        Plaid.authenticate(username, password: password, type: "chase") { (access_token, error) -> Void in
+            guard let access_token = access_token else {
                 print("an error occurred")
                 return
             }
@@ -58,7 +58,6 @@ public class LoginViewController: UIViewController {
                         calendar.rangeOfUnit(.Day, startDate: &toDate, interval: nil, forDate: current)
                         
                         let difference = calendar.components(.Day, fromDate: fromDate!, toDate: toDate!, options: NSCalendarOptions(rawValue: 0))
-                        print(difference.day)
                         if difference.day > 62 {
                             break
                         }

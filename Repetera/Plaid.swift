@@ -15,22 +15,13 @@ var access_token = String()
 
 public class Plaid {
     
-    public class func authenticate(username: String, password: String, type: String, completion: (access_token: String?, accounts: Array<Account>?, error: NSError?) -> Void) {
+    public class func authenticate(username: String, password: String, type: String, completion: (access_token: String?, error: NSError?) -> Void) {
         Plaid.request("/auth", requestType: "POST", params: ["client_id": client_id, "secret": secret, "username": username, "password": password, "type": type]) { (json, error) -> Void in
             if let _ = error {
-                completion(access_token: nil, accounts: nil, error: error)
+                completion(access_token: nil, error: error)
             } else {
                 let token = json["access_token"].stringValue
-                
-                var accounts = Array<Account>()
-                
-                let retrieved_accounts = json["accounts"].arrayValue
-                for retrieved_account in retrieved_accounts {
-                    let account = self.accountFromJSON(retrieved_account)
-                    accounts.append(account)
-                }
-                
-                completion(access_token: token, accounts: accounts, error: nil)
+                completion(access_token: token, error: nil)
             }
         }
     }

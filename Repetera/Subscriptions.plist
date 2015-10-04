@@ -2,58 +2,121 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>JTI*TWITCHTV SUB SRVCS</key>
+	<key>^KINDLE-.*</key>
 	<dict>
-		<key>status</key>
-		<string>Turbo</string>
+		<key>color</key>
+		<string>248,152,32</string>
+		<key>name</key>
+		<string>Kindle Purchase</string>
+		<key>statuses</key>
+		<dict>
+			<key>*</key>
+			<string>Recurring Payment</string>
+		</dict>
+	</dict>
+	<key>ADOBE \*CREATIVE CLOUD</key>
+	<dict>
+		<key>color</key>
+		<string>210,10,10</string>
+		<key>name</key>
+		<string>Adobe Creative Cloud</string>
+		<key>statuses</key>
+		<dict>
+			<key>32.65</key>
+			<string>Student All Apps</string>
+		</dict>
+	</dict>
+	<key>Music</key>
+	<dict>
+		<key>statuses</key>
+		<dict>
+			<key>9.99</key>
+			<string>Unlimited</string>
+		</dict>
+		<key>name</key>
+		<string>Google Play Music</string>
+		<key>color</key>
+		<string>239,108,0</string>
+	</dict>
+	<key>JTI\*TWITCHTV SUB SRVCS</key>
+	<dict>
+		<key>statuses</key>
+		<dict>
+			<key>4.99</key>
+			<string>Subscription</string>
+			<key>8.99</key>
+			<string>Turbo</string>
+		</dict>
 		<key>name</key>
 		<string>Twitch</string>
-		<key>price</key>
-		<string>8.99</string>
 		<key>color</key>
 		<string>100,65,165</string>
 	</dict>
 	<key>GITHUB.COM</key>
 	<dict>
-		<key>status</key>
-		<string>Small</string>
+		<key>statuses</key>
+		<dict>
+			<key>25.00</key>
+			<string>Bronze</string>
+			<key>100.00</key>
+			<string>Gold</string>
+			<key>200.00</key>
+			<string>Platinum</string>
+			<key>43.00</key>
+			<string>Large</string>
+			<key>7.00</key>
+			<string>Micro</string>
+			<key>12.00</key>
+			<string>Small</string>
+			<key>22.00</key>
+			<string>Medium</string>
+			<key>50.00</key>
+			<string>Large</string>
+			<key>15.00</key>
+			<string>Medium</string>
+			<key>5.00</key>
+			<string>Small</string>
+		</dict>
 		<key>name</key>
 		<string>GitHub</string>
-		<key>price</key>
-		<string>5</string>
 		<key>color</key>
 		<string>21,16,19</string>
 	</dict>
-	<key>ADOBE *PHOTOGPHY PLAN</key>
+	<key>ADOBE \*PHOTOGPHY PLAN</key>
 	<dict>
-		<key>status</key>
-		<string>Photography</string>
+		<key>statuses</key>
+		<dict>
+			<key>10.88</key>
+			<string>Photography</string>
+		</dict>
 		<key>name</key>
 		<string>Adobe Creative Cloud</string>
-		<key>price</key>
-		<string>10.88</string>
 		<key>color</key>
 		<string>210,10,10</string>
 	</dict>
-	<key>DROPBOX db.tt/cchelp</key>
+	<key>DROPBOX db.tt\/cchelp</key>
 	<dict>
-		<key>status</key>
-		<string>Pro</string>
+		<key>statuses</key>
+		<dict>
+			<key>9.99</key>
+			<string>Pro</string>
+		</dict>
 		<key>name</key>
 		<string>Dropbox</string>
-		<key>price</key>
-		<string>9.99</string>
 		<key>color</key>
 		<string>0,126,229</string>
 	</dict>
 	<key>Spotify</key>
 	<dict>
-		<key>status</key>
-		<string>Premium</string>
+		<key>statuses</key>
+		<dict>
+			<key>4.99</key>
+			<string>Student Premium</string>
+			<key>9.99</key>
+			<string>Premium</string>
+		</dict>
 		<key>name</key>
 		<string>Spotify</string>
-		<key>price</key>
-		<string>9.99</string>
 		<key>color</key>
 		<string>30,215,96</string>
 	</dict>
