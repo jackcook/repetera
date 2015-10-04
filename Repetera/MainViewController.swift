@@ -61,7 +61,7 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
                     }
                     
                     let difference = self.daysFrom(from: transaction.date, to: NSDate())
-                    if difference > 62 {
+                    if difference > 350 {
                         break
                     }
                     
@@ -165,6 +165,10 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.subscriptions.count
+    }
+    
+    public override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        SVProgressHUD.dismiss()
     }
     
     private func daysFrom(from pFromDate: NSDate, to pToDate: NSDate) -> Int {

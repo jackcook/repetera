@@ -73,6 +73,7 @@ public class Plaid {
         
         var url = NSURL(string: "https://tartan.plaid.com\(endpoint)")!
         url = self.NSURLByAppendingQueryParameters(url, queryParameters: params)
+        print(url)
         
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = requestType
@@ -80,6 +81,7 @@ public class Plaid {
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             if data != nil {
                 let json = JSON(data: data!)
+                print(json)
                 completion(json: json, error: error)
             } else {
                 // offline

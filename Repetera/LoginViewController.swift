@@ -48,6 +48,7 @@ public class LoginViewController: UIViewController {
             
             Plaid.upgrade(access_token, completion: { (error) -> Void in
                 SVProgressHUD.dismiss()
+                self.navigationController?.popViewControllerAnimated(true)
             })
         }
     }
