@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>JTI*TWITCHTV SUB SRVCS</key>
+	<dict>
+		<key>status</key>
+		<string>Turbo</string>
+		<key>name</key>
+		<string>Twitch</string>
+		<key>price</key>
+		<string>8.99</string>
+		<key>color</key>
+		<string>100,65,165</string>
+	</dict>
 	<key>GH GITHUB.COM</key>
 	<dict>
 		<key>status</key>

@@ -15,17 +15,22 @@ var access_token = String()
 
 public class Plaid {
     
-    public static var accounts = Array<Account>()
-    public static var transactions = Array<Transaction>()
-    
-    public class func authenticate(username: String, password: String, type: String, completion: (access_token: String?, error: NSError?) -> Void) {
+    public class func authenticate(username: String, password: String, type: String, completion: (access_token: String?, accounts: Array<Account>?, error: NSError?) -> Void) {
         Plaid.request("/auth", requestType: "POST", params: ["client_id": client_id, "secret": secret, "username": username, "password": password, "type": type]) { (json, error) -> Void in
             if let _ = error {
-                completion(access_token: nil, error: error)
+                completion(access_token: nil, accounts: nil, error: error)
             } else {
                 let token = json["access_token"].stringValue
-                access_token = token
-                completion(access_token: token, error: nil)
+                
+                var accounts = Array<Account>()
+                
+                let retrieved_accounts = json["accounts"].arrayValue
+                for retrieved_account in retrieved_accounts {
+                    let account = self.accountFromJSON(retrieved_account)
+                    accounts.append(account)
+                }
+                
+                completion(access_token: token, accounts: accounts, error: nil)
             }
         }
     }
@@ -39,7 +44,7 @@ public class Plaid {
                 
                 let retrieved_accounts = json["accounts"].arrayValue
                 for retrieved_account in retrieved_accounts {
-                    let account = Account(json: retrieved_account)
+                    let account = self.accountFromJSON(retrieved_account)
                     accounts.append(account)
                 }
                 
@@ -85,16 +90,22 @@ public class Plaid {
         task.resume()
     }
     
+    private class func accountFromJSON(json: JSON) -> Account {
+        let account = Account()
+        
+        account.id = json["_id"].stringValue
+        account.name = json["meta"]["name"].stringValue
+        account.bank = json["institution_type"].stringValue
+        
+        return account
+    }
+    
     private class func stringFromQueryParameters(queryParameters : Dictionary<String, String>) -> String {
         var parts: [String] = []
         for (name, value) in queryParameters {
             let part = NSString(format: "%@=%@",
                 name.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!,
                 value.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!)
-            
-//            let part = NSString(format: "%@=%@",
-//                name.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!,
-//                value.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
             parts.append(part as String)
         }
         return parts.joinWithSeparator("&")
@@ -103,29 +114,6 @@ public class Plaid {
     private class func NSURLByAppendingQueryParameters(URL : NSURL!, queryParameters : Dictionary<String, String>) -> NSURL {
         let URLString: NSString = NSString(format: "%@?%@", URL.absoluteString, self.stringFromQueryParameters(queryParameters))
         return NSURL(string: URLString as String)!
-    }
-}
-
-public struct Account {
-    
-    var id: String
-    var user: String
-    var available_balance: Float
-    var current_balance: Float
-    var bank: String
-    var name: String
-    var number: String
-    var type: String
-    
-    init(json: JSON) {
-        self.id = json["_id"].stringValue
-        self.user = json["_user"].stringValue
-        self.available_balance = json["balance"]["available"].floatValue
-        self.current_balance = json["balance"]["current"].floatValue
-        self.bank = json["institution_type"].stringValue
-        self.name = json["meta"]["name"].stringValue
-        self.number = json["meta"]["number"].stringValue
-        self.type = json["subtype"].stringValue
     }
 }
 

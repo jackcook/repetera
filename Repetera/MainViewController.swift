@@ -6,6 +6,7 @@
 //  Copyright © 2015 Jack Cook. All rights reserved.
 //
 
+import RealmSwift
 import UIKit
 
 public class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -18,6 +19,14 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        var accessTokens = Array<String>()
+        
+        for account in (try! Realm()).objects(Account) {
+            if !accessTokens.contains(account.accessToken) {
+                accessTokens.append(account.accessToken)
+            }
+        }
+        
         self.names = Array<String>()
         self.subscriptions = Array<Subscription>()
         
@@ -25,31 +34,24 @@ public class MainViewController: UIViewController, UITableViewDataSource, UITabl
         self.tableView.delegate = self
         self.tableView.separatorStyle = .None
         
-        Plaid.authenticate(Keys.bankUsername(), password: Keys.bankPassword(), type: Keys.bankType()) { (access_token, error) -> Void in
-            guard let access_token = access_token else {
-                print("an error occurred")
-                return
-            }
-            
-            Plaid.upgrade(access_token, completion: { (error) -> Void in
-                Plaid.connect(access_token, completion: { (accounts, transactions, error) -> Void in
-                    guard let transactions = transactions else {
-                        print("an error occurred :(")
-                        return
-                    }
-                    
-                    for transaction in transactions {
-                        if let subscription = Subscription.getSubscriptions()[transaction.name] {
-                            if !self.names.contains(transaction.name) {
-                                self.names.append(transaction.name)
-                                self.subscriptions.append(subscription)
-                            }
+        for token in accessTokens {
+            Plaid.connect(token, completion: { (accounts, transactions, error) -> Void in
+                guard let transactions = transactions else {
+                    print("an error occurred :(")
+                    return
+                }
+                
+                for transaction in transactions {
+                    if let subscription = Subscription.getSubscriptions()[transaction.name] {
+                        if !self.names.contains(transaction.name) {
+                            self.names.append(transaction.name)
+                            self.subscriptions.append(subscription)
                         }
                     }
-                    
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        self.tableView.reloadData()
-                    })
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.tableView.reloadData()
                 })
             })
         }

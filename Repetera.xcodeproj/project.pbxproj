@@ -13,6 +13,9 @@
 		EB564F011BC0580800BA6B8C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564EFF1BC0580800BA6B8C /* Keys.swift */; };
 		EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB564F021BC066B400BA6B8C /* Subscription.swift */; };
 		EB564F051BC06BFF00BA6B8C /* Subscriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */; };
+		EBC080561BC0A79C0093C813 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080551BC0A79C0093C813 /* AccountsViewController.swift */; };
+		EBC080581BC0A9A90093C813 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080571BC0A9A90093C813 /* Account.swift */; };
+		EBC0805A1BC0AFB40093C813 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC080591BC0AFB40093C813 /* LoginViewController.swift */; };
 		EBD7D2811BC0555100831E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7D2801BC0555100831E94 /* AppDelegate.swift */; };
 		EBD7D2861BC0555100831E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2841BC0555100831E94 /* Main.storyboard */; };
 		EBD7D2881BC0555100831E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7D2871BC0555100831E94 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		EB564EFF1BC0580800BA6B8C /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		EB564F021BC066B400BA6B8C /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Subscriptions.plist; sourceTree = "<group>"; };
+		EBC080551BC0A79C0093C813 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		EBC080571BC0A9A90093C813 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		EBC080591BC0AFB40093C813 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBD7D27D1BC0555100831E94 /* Repetera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7D2801BC0555100831E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7D2851BC0555100831E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 				EBD7D28C1BC0555100831E94 /* Info.plist */,
 				EB564F021BC066B400BA6B8C /* Subscription.swift */,
 				EB564F041BC06BFF00BA6B8C /* Subscriptions.plist */,
+				EBC080571BC0A9A90093C813 /* Account.swift */,
 			);
 			path = Repetera;
 			sourceTree = "<group>";
@@ -168,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				EBD7D2AF1BC0568400831E94 /* MainViewController.swift */,
+				EBC080551BC0A79C0093C813 /* AccountsViewController.swift */,
+				EBC080591BC0AFB40093C813 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -359,6 +368,9 @@
 				EB564F011BC0580800BA6B8C /* Keys.swift in Sources */,
 				EBD7D2B01BC0568400831E94 /* MainViewController.swift in Sources */,
 				EB131CB11BC0578F00309963 /* Plaid.swift in Sources */,
+				EBC0805A1BC0AFB40093C813 /* LoginViewController.swift in Sources */,
+				EBC080561BC0A79C0093C813 /* AccountsViewController.swift in Sources */,
+				EBC080581BC0A9A90093C813 /* Account.swift in Sources */,
 				EB564F031BC066B400BA6B8C /* Subscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
