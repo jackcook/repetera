@@ -2,6 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>INTUIT \*QB ONLINE</key>
+	<dict>
+		<key>statuses</key>
+		<dict>
+			<key>43.50</key>
+			<string>Plus</string>
+		</dict>
+		<key>name</key>
+		<string>QuickBooks</string>
+		<key>color</key>
+		<string>36,162,5</string>
+	</dict>
+	<key>TREEHOUSE</key>
+	<dict>
+		<key>statuses</key>
+		<dict>
+			<key>9.00</key>
+			<string>Student Basic</string>
+			<key>29.00</key>
+			<string>Basic</string>
+			<key>49.00</key>
+			<string>Pro</string>
+		</dict>
+		<key>name</key>
+		<string>Treehouse</string>
+		<key>color</key>
+		<string>105,198,115</string>
+	</dict>
+	<key>BWI\*BOINGO WIRELESS</key>
+	<dict>
+		<key>statuses</key>
+		<dict>
+			<key>9.95</key>
+			<string>Unlimited</string>
+		</dict>
+		<key>name</key>
+		<string>Boingo Wireless</string>
+		<key>color</key>
+		<string>211,32,9</string>
+	</dict>
 	<key>^KINDLE-.*</key>
 	<dict>
 		<key>color</key>
