@@ -78,6 +78,7 @@
                                                         <constraint firstItem="Dly-aE-Q7v" firstAttribute="leading" secondItem="IHV-6z-9p5" secondAttribute="leading" id="JTB-lZ-Dnq"/>
                                                         <constraint firstAttribute="trailing" secondItem="kgQ-lF-kqh" secondAttribute="trailing" constant="16" id="LDK-wG-j4a"/>
                                                         <constraint firstAttribute="bottom" secondItem="tKy-P8-99t" secondAttribute="bottom" constant="12" id="MA4-xm-AUY"/>
+                                                        <constraint firstItem="kgQ-lF-kqh" firstAttribute="leading" secondItem="IHV-6z-9p5" secondAttribute="trailing" constant="384.5" id="Mfu-nz-No5"/>
                                                         <constraint firstItem="Dly-aE-Q7v" firstAttribute="leading" secondItem="tKy-P8-99t" secondAttribute="trailing" constant="12" id="ZnI-R5-Ect"/>
                                                         <constraint firstAttribute="bottom" secondItem="Dly-aE-Q7v" secondAttribute="bottom" constant="13" id="cvt-bP-ij8"/>
                                                         <constraint firstItem="IHV-6z-9p5" firstAttribute="leading" secondItem="tKy-P8-99t" secondAttribute="trailing" constant="12" id="xAl-iw-u27"/>
@@ -86,6 +87,7 @@
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="ZnI-R5-Ect"/>
+                                                            <exclude reference="Mfu-nz-No5"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
